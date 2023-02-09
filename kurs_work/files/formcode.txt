@@ -1,0 +1,8 @@
+<h2> Форма для таблицы </h2>
+
+<form action = "Z3Form.php" method=POST target="_blank">
+    Строки <br><input type=text name="Rows"><br>
+    Столбцы <br><input type=text name="Columns"><br>
+    <p><input type=submit value="Отправить">
+    <input type=reset value="Отменить"></p>
+</form> 

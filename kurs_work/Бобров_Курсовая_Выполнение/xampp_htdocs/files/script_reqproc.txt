@@ -1,0 +1,20 @@
+<?php
+    if(isset($_POST["readonly"]))
+    {
+        foreach(glob("files/*.txt") as $filename)
+        {
+            echo $filename . "<br>";
+        }
+    }
+    else
+    {
+        $path = $_POST["path"];
+        if(!highlight_file($path))
+        {
+            $file = fopen($path, "r");
+            $data = fread($file, 4);
+            fclose($file);
+            echo $data;
+        }
+    }
+?>

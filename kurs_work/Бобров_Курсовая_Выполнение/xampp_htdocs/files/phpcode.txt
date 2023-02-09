@@ -1,0 +1,18 @@
+<?php
+$Rows = $_REQUEST["Rows"];
+$Columns = $_REQUEST["Columns"];
+echo '<html><body>';
+echo '<table border="1">';
+for($i = 1; $i <= $Rows; $i++)
+{
+    echo '<tr>';
+    for($j = 1; $j <= $Columns; $j++)
+    {
+        echo '<td style="background-color:RGB(255,255,255);">'.$i.','.$j.'</td>';
+    }
+    echo '</tr>';
+}
+echo '</table>';
+echo '</body>'
+echo '</html>';
+?>

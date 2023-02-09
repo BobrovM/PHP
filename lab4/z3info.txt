@@ -1,0 +1,3 @@
+usr1:5432:wrd1:
+usr2:psswd2:wrd2:
+usr3:psswd3:wrd3:
